@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.teamalpha.bloodpals.presentation.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_bloodbanks"
+        android:name="com.teamalpha.bloodpals.presentation.bloodbanks.BloodBanksFragment"
+        android:label="@string/menu_blood_banks" />
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.teamalpha.bloodpals.presentation.login.LoginFragment"
+        android:label="@string/menu_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/nav_register"
+        android:name="com.teamalpha.bloodpals.presentation.register.RegisterFragment"
+        android:label="@string/menu_register"
+        tools:layout="@layout/fragment_register" />
+    <fragment
+        android:id="@+id/nav_my_profile"
+        android:name="com.teamalpha.bloodpals.presentation.myprofile.MyProfileFragment"
+        android:label="@string/menu_my_profile"
+        tools:layout="@layout/fragment_my_profile">
+        <action
+            android:id="@+id/action_nav_my_profile_to_nav_my_qr_code"
+            app:destination="@id/nav_my_qr_code" />
+        <action
+            android:id="@+id/action_nav_my_profile_to_nav_edit_my_profile"
+            app:destination="@id/nav_edit_my_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_edit_my_profile"
+        android:name="com.teamalpha.bloodpals.presentation.myprofile.EditMyProfileFragment"
+        android:label="@string/page_edit_my_profile"
+        tools:layout="@layout/fragment_edit_my_profile" />
+    <fragment
+        android:id="@+id/nav_my_qr_code"
+        android:name="com.teamalpha.bloodpals.presentation.myprofile.MyQRCodeFragment"
+        android:label="@string/page_my_qr_code"
+        tools:layout="@layout/fragment_my_qr_code" />
+    <fragment
+        android:id="@+id/nav_my_donation_activities"
+        android:name="com.teamalpha.bloodpals.presentation.mydonationactivities.MyDonationActivitiesFragment"
+        android:label="@string/menu_my_blood_donation_activities"
+        tools:layout="@layout/fragment_my_donation_activities" >
+        <action
+            android:id="@+id/action_nav_my_donation_activities_to_nav_create_donation_activity"
+            app:destination="@id/nav_create_donation_activity" />
+        <action
+            android:id="@+id/action_nav_my_donation_activities_to_nav_edit_donation_activity"
+            app:destination="@id/nav_edit_donation_activity" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_create_donation_activity"
+        android:name="com.teamalpha.bloodpals.presentation.mydonationactivities.CreateDonationActivityFragment"
+        android:label="@string/page_create_donation_activity"
+        tools:layout="@layout/fragment_create_donation_activity" />
+    <fragment
+        android:id="@+id/nav_edit_donation_activity"
+        android:name="com.teamalpha.bloodpals.presentation.mydonationactivities.EditDonationActivityFragment"
+        android:label="@string/page_edit_donation_activity"
+        tools:layout="@layout/fragment_edit_donation_activity" />
+
+    <fragment
+        android:id="@+id/nav_give_user_points"
+        android:name="com.teamalpha.bloodpals.presentation.userprofile.ScanQRCodeFragment"
+        android:label="@string/menu_give_user_points"
+        tools:layout="@layout/fragment_scan_qr_code" >
+        <action
+            android:id="@+id/action_nav_give_user_points_to_nav_user_profile"
+            app:destination="@id/nav_user_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_deduct_user_points"
+        android:name="com.teamalpha.bloodpals.presentation.userprofile.ScanQRCodeFragment"
+        android:label="@string/menu_deduct_user_points"
+        tools:layout="@layout/fragment_scan_qr_code" >
+        <action
+            android:id="@+id/action_nav_deduct_user_points_to_nav_user_profile"
+            app:destination="@id/nav_user_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_user_profile"
+        android:name="com.teamalpha.bloodpals.presentation.userprofile.UserProfileFragment"
+        android:label="@string/page_user_profile"
+        tools:layout="@layout/fragment_user_profile" />
+    <fragment
+        android:id="@+id/nav_reward"
+        android:name="com.teamalpha.bloodpals.presentation.sample.RewardFragment"
+        android:label="Reward" />
+
+</navigation>

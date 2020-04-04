@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.register.RegisterFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/list_margin"
+        android:layout_marginTop="@dimen/list_margin"
+        android:layout_marginEnd="@dimen/list_margin"
+        android:layout_marginBottom="@dimen/list_margin"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <!-- Name -->
+
+        <TextView
+            android:id="@+id/label_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/input_name"
+            android:text="@string/label_name" />
+
+        <EditText
+            android:id="@+id/input_name"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/list_margin"
+            android:accessibilityLiveRegion="none"
+            android:autofillHints=""
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:maxLength="32" />
+
+        <!-- Email -->
+
+        <TextView
+            android:id="@+id/label_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/input_email"
+            android:text="@string/label_email" />
+
+        <EditText
+            android:id="@+id/input_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/list_margin"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:autofillHints=""
+            android:maxLength="128" />
+
+        <!-- Password -->
+
+        <TextView
+            android:id="@+id/label_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/input_password"
+            android:text="@string/label_password" />
+
+        <EditText
+            android:id="@+id/input_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/list_margin"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:importantForAutofill="no"
+            android:maxLength="32"/>
+
+        <!-- Password Requirements -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/password_requirement_1"
+            android:textSize="12sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/password_requirement_2"
+            android:textSize="12sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/password_requirement_3"
+            android:layout_marginBottom="@dimen/list_margin"
+            android:textSize="12sp" />
+
+        <!-- Confirm Password -->
+
+        <TextView
+            android:id="@+id/label_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/input_confirm_password"
+            android:text="@string/label_confirm_password" />
+
+        <EditText
+            android:id="@+id/input_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/list_margin"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:importantForAutofill="no"
+            android:maxLength="32" />
+
+        <!-- Register Button -->
+
+        <Button
+            android:id="@+id/button_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/list_margin"
+            android:text="@string/button_register_text"
+            android:enabled="false"/>
+
+        <!-- Progress Spinner -->
+
+        <ProgressBar
+            android:id="@+id/progress_spinner"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.mydonationactivities.CreateDonationActivityFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/list_margin"
+            android:layout_marginTop="@dimen/list_margin"
+            android:layout_marginEnd="@dimen/list_margin"
+            android:layout_marginBottom="@dimen/list_margin"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <!-- Date -->
+
+            <TextView
+                android:id="@+id/label_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/input_donated_date"
+                android:text="@string/label_date" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/input_donated_date"
+                    android:layout_width="334dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/list_margin"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="datetime" />
+
+                <ImageButton
+                    android:id="@+id/button_date_picker"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/button_date_picker"
+                    android:src="@drawable/ic_date_range_black_24dp" />
+
+            </LinearLayout>
+
+            <!-- Time -->
+
+            <TextView
+                android:id="@+id/label_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/input_donated_time"
+                android:text="@string/label_time" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/input_donated_time"
+                    android:layout_width="334dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/list_margin"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="datetime" />
+
+                <ImageButton
+                    android:id="@+id/button_time_picker"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/button_time_picker"
+                    android:src="@drawable/ic_access_time_black_24dp" />
+
+            </LinearLayout>
+
+            <!-- Location -->
+
+            <TextView
+                android:id="@+id/label_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/input_location"
+                android:text="@string/label_location" />
+
+            <EditText
+                android:id="@+id/input_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/list_margin"
+                android:autofillHints=""
+                android:ems="10"
+                android:inputType="textImeMultiLine" />
+
+            <!-- Donated -->
+
+            <TextView
+                android:id="@+id/label_donated_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/input_donated_amount"
+                android:text="@string/label_donated_amount" />
+
+            <EditText
+                android:id="@+id/input_donated_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/list_margin"
+                android:autofillHints=""
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+            <!-- Button -->
+
+            <Button
+                android:id="@+id/button_create"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/list_margin"
+                android:text="@string/button_create" />
+
+            <!-- Progress Spinner -->
+
+            <ProgressBar
+                android:id="@+id/progress_spinner"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:id="@+id/main"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_bloodbanks"
+            android:title="@string/menu_blood_banks" />
+        <item
+            android:id="@+id/nav_check_blood_donation_eligibility"
+            android:title="@string/menu_check_blood_donation_eligibility" />
+        <item
+            android:id="@+id/nav_book_appointment_with_singpass"
+            android:title="@string/menu_book_appointment_with_singpass" />
+        <item
+            android:id="@+id/nav_rewards"
+            android:title="@string/menu_rewards" />
+    </group>
+    <group android:id="@+id/nav_auth_logged_in_group"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_my_donation_activities"
+            android:title="@string/menu_my_blood_donation_activities" />
+        <item
+            android:id="@+id/nav_give_user_points"
+            android:title="@string/menu_give_user_points" />
+        <item
+            android:id="@+id/nav_deduct_user_points"
+            android:title="@string/menu_deduct_user_points" />
+    </group>
+    <group android:id="@+id/nav_auth_login_group"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_login"
+            android:title="@string/menu_login" />
+        <item
+            android:id="@+id/nav_register"
+            android:title="@string/menu_register" />
+    </group>
+    <group android:id="@+id/nav_auth_logout_group"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_my_profile"
+            android:title="@string/menu_my_profile" />
+        <item
+            android:id="@+id/nav_logout"
+            android:title="@string/menu_logout" />
+    </group>
+</menu>

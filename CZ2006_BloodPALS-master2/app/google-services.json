@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1003045408089",
+    "firebase_url": "https://bloodpals.firebaseio.com",
+    "project_id": "bloodpals",
+    "storage_bucket": "bloodpals.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1003045408089:android:6f171b94830f09878a9048",
+        "android_client_info": {
+          "package_name": "com.teamalpha.bloodpals"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1003045408089-8evd1gjelbak74ihi32affa4ermuk1vt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.teamalpha.bloodpals",
+            "certificate_hash": "84d93dfed1a08cf5bdb994deb91a6a5df0df4329"
+          }
+        },
+        {
+          "client_id": "1003045408089-ctv706qq8u4p76n131nbs9ihufe9f4k1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBL_PIPCImw0_QG9uxRhlaKW1hDwDJApmE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1003045408089-ctv706qq8u4p76n131nbs9ihufe9f4k1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

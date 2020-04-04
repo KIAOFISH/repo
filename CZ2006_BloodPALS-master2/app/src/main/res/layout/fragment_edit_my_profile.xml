@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.myprofile.EditMyProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/list_margin"
+        android:layout_marginTop="@dimen/list_margin"
+        android:layout_marginEnd="@dimen/list_margin"
+        android:layout_marginBottom="@dimen/list_margin"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <!-- Name -->
+
+        <TextView
+            android:id="@+id/label_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/input_name"
+            android:text="@string/label_name" />
+
+        <EditText
+            android:id="@+id/input_name"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/list_margin"
+            android:accessibilityLiveRegion="none"
+            android:autofillHints=""
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:maxLength="32" />
+
+        <!-- Date of Birth -->
+
+        <TextView
+            android:id="@+id/label_dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/input_dob"
+            android:text="@string/label_dob" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/list_margin"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/input_dob"
+                android:layout_width="334dp"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="datetime" />
+
+            <ImageButton
+                android:id="@+id/button_date_picker"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/button_date_picker"
+                android:src="@drawable/ic_date_range_black_24dp" />
+
+        </LinearLayout>
+
+        <!-- Blood Type -->
+
+        <TextView
+            android:id="@+id/label_blood_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/input_blood_type"
+            android:text="@string/label_blood_type" />
+
+        <Spinner
+            android:id="@+id/input_blood_type"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/list_margin" />
+
+        <!-- Button -->
+
+        <Button
+            android:id="@+id/button_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/list_margin"
+            android:text="@string/button_update"/>
+
+        <!-- Progress Spinner -->
+
+        <ProgressBar
+            android:id="@+id/progress_spinner"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
